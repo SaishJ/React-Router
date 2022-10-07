@@ -32,3 +32,8 @@ npm install react-router-dom@6
 
 > To Navigate Programmatically React Router provides `useNavigate` hook.
 > This hook return a function which call as navigate.
+
+### 5. No Match Route
+
+> When url is not found or match.
+> `<Route path="*" element={} />` -> This route match when no other route do.
