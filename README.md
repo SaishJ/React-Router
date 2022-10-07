@@ -22,3 +22,8 @@ npm install react-router-dom@6
 > Navigate between the Routes -> React Router provides `<Link>` components.
 > It renders anchor `<a>` element in DOM.
 > `<Link>` accept `to` prop -> in this prop assign the path of configure route.
+
+### 3. Active Links
+
+> React Router provides `<NavLink>` component which knows wheather link is active or not.
+> `<NavLink>` component is specifically made for Navbar or Breadcrumbs component.

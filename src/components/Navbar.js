@@ -1,12 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      fontWeight: isActive ? "bold" : "normal",
+      textDecoration: isActive ? "none" : "underline",
+    };
+  };
+
   return (
     <nav>
-      <Link to="/">Home</Link>
-      <Link to="about">About</Link>
-      {/* Link renders anchor element in the DOM. It accept to prop which is assign the path of configure route. */}
+      <NavLink to="/" style={navLinkStyles}>
+        Home
+      </NavLink>
+      <NavLink to="about" style={navLinkStyles}>
+        About
+      </NavLink>
+      {/* it set by default which class is active. Use active class or isActive to style active links. */}
     </nav>
   );
 };
