@@ -10,9 +10,15 @@
 npm install react-router-dom@6
 ```
 
-## 1. Configuring Routes
+### 1. Configuring Routes
 
 > Configure the routes using the `<Routes>` and `<Route>` component from React Router.
 > Each `<Route>` accept 2 props
 > 1st - path -> path in the browser url.
 > 2nd - element -> corresponding react element to the render when the path is matched.
+
+### 2. Links
+
+> Navigate between the Routes -> React Router provides `<Link>` components.
+> It renders anchor `<a>` element in DOM.
+> `<Link>` accept `to` prop -> in this prop assign the path of configure route.
