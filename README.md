@@ -41,3 +41,8 @@ npm install react-router-dom@6
 ### 6. Nested Routes
 
 > React Router also hels to switch between portion of the view inside the page. React Router automatically forms the full path to the children routes. React Router provides `<Outlet />` component to render child component.
+
+### 7. Index Route
+
+> Sometimes want to one of the child route to render at the parent route level use Index Route.
+> Index Route contain `index` prop instead of `path` prop.
