@@ -37,3 +37,7 @@ npm install react-router-dom@6
 
 > When url is not found or match.
 > `<Route path="*" element={} />` -> This route match when no other route do.
+
+### 6. Nested Routes
+
+> React Router also hels to switch between portion of the view inside the page. React Router automatically forms the full path to the children routes. React Router provides `<Outlet />` component to render child component.
