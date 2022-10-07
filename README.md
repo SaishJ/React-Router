@@ -46,3 +46,7 @@ npm install react-router-dom@6
 
 > Sometimes want to one of the child route to render at the parent route level use Index Route.
 > Index Route contain `index` prop instead of `path` prop.
+
+### 8. Dynamic Route
+
+> Dynamic Route can be Nested as wll. The `:id` -> This means the component will see the dynamic part in the id parameter.
