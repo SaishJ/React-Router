@@ -27,3 +27,8 @@ npm install react-router-dom@6
 
 > React Router provides `<NavLink>` component which knows wheather link is active or not.
 > `<NavLink>` component is specifically made for Navbar or Breadcrumbs component.
+
+### 4. Navigate Programmatically
+
+> To Navigate Programmatically React Router provides `useNavigate` hook.
+> This hook return a function which call as navigate.
