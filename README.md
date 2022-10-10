@@ -54,3 +54,8 @@ npm install react-router-dom@6
 ### 9. URL Params
 
 > To extract `Route` parameter need to import hook `useParams()`. This hook return an object of key-value pairs.ss
+
+### 10. Search Params
+
+> Add or Remove search param `React Router` provide hook called `useSearchParams()`. This hook is same as `useState()` in React. Instead of storing state in memory store in URL.
+> `Search Params` use when apply a filter in a listing page. example: Amazon, Flipkart, etc.
