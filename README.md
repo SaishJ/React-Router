@@ -50,3 +50,7 @@ npm install react-router-dom@6
 ### 8. Dynamic Route
 
 > Dynamic Route can be Nested as wll. The `:id` -> This means the component will see the dynamic part in the id parameter.
+
+### 9. URL Params
+
+> To extract `Route` parameter need to import hook `useParams()`. This hook return an object of key-value pairs.ss
