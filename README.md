@@ -59,3 +59,7 @@ npm install react-router-dom@6
 
 > Add or Remove search param `React Router` provide hook called `useSearchParams()`. This hook is same as `useState()` in React. Instead of storing state in memory store in URL.
 > `Search Params` use when apply a filter in a listing page. example: Amazon, Flipkart, etc.
+
+### 11. Lazy Loading
+
+> Lazy Loading is a technique where components not require on the Home page can be split into the seprate code bundles and downloaded only when the user navigate that page.

@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -12,6 +13,8 @@ import Users from "./components/Users";
 import UserDetails from "./components/UserDetails";
 import Admin from "./components/Admin";
 
+const LazyAbout = React.lazy(() => import("./components/About"));
+
 function App() {
   return (
     <>
@@ -19,7 +22,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* It accept 2 props -> 1st path: which reflects the path in the url. 2nd element: assign the component. */}
-        <Route path="about" element={<About />} />
+        <Route
+          path="about"
+          element={
+            <React.Suspense fallback="Loading...">
+              <LazyAbout />
+            </React.Suspense>
+          }
+        />
         <Route path="order-summary" element={<Order />} />
         <Route path="products" element={<Products />}>
           <Route index element={<New />} />
